@@ -1,0 +1,73 @@
+<?php
+
+if ( !defined( 'MEDIAWIKI' ) ) {
+  exit;
+}
+
+# $wgDisableOutputCompression = true;
+
+ $wgSitename = "<%= @wikisitename %>";
+ $wgMetaNamespace = "<%= @wikimetanamespace %>";
+
+
+ $wgScriptPath = "";
+ $wgScriptExtension = ".php";
+ $wgServer = "<%= @wikiserver %>";
+ $wgStylePath = "$wgScriptPath/skins";
+ $wgLogo = "$wgStylePath/common/images/wiki.png";
+ $wgEnableEmail = true;
+ $wgEnableUserEmail = true; 
+ $wgEmergencyContact = "apache@172.31.0.202";
+ $wgPasswordSender = "apache@172.31.0.202";
+ $wgEnotifUserTalk = false; # UPO
+ $wgEnotifWatchlist = false; # UPO
+ $wgEmailAuthentication = true;
+ $wgDBtype = "mysql";
+ $wgDBserver = "<%= @wikidbserver %>";
+ $wgDBname = "<%= @wikidbname %>";
+ $wgDBuser = "<%= @wikidbuser %>";
+ $wgDBpassword = "<%= @wikidbpassword %>";
+ $wgDBprefix = "";
+ $wgDBTableOptions = "ENGINE=InnoDB, DEFAULT CHARSET=binary";
+ $wgDBmysql5 = false;
+ $wgMainCacheType = CACHE_NONE;
+ $wgMemCachedServers = array();
+ $wgEnableUploads = false;
+ #$wgUseImageMagick = true;
+ #$wgImageMagickConvertCommand = "/usr/bin/convert";
+ $wgUseInstantCommons = false;
+
+
+ $wgShellLocale = "en_US.utf8";
+
+
+ #$wgHashedUploadDirectory = false;
+
+
+ #$wgCacheDirectory = "$IP/cache";
+
+ # Site language code, should be one of the list in ./languages/Names.php
+ $wgLanguageCode = "en";
+
+ $wgSecretKey = "71bc316fae1cf9b1eddf6c8ae35478e13d9464d9782b225e72fd5140aca2ed52";
+
+
+ $wgUpgradeKey = "<%= @wikiupgradekey %>";
+
+
+ $wgDefaultSkin = "vector";
+
+
+ $wgRightsPage = ""; 
+ $wgRightsUrl = "";
+ $wgRightsText = "";
+ $wgRightsIcon = "";
+
+
+$wgDiff3 = "/usr/bin/diff3";
+
+
+
+ 
+
+
